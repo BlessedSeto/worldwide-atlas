@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101a1d" />
+    <meta name="description" content="A hand-picked atlas of live maps, hidden places, world-changing data, art, music and science." />
+    <title>WorldWide — A doorway to the world</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="WorldWide home">
+        <span class="brand-mark" aria-hidden="true"><i></i><b></b></span>
+        <span class="brand-name">world<span>wide</span><small>AN ATLAS FOR THE CURIOUS</small></span>
+      </a>
+      <nav class="header-nav" aria-label="Main navigation">
+        <a href="#collections">Explore</a>
+        <a href="#about">About this atlas</a>
+      </nav>
+      <a class="header-count" href="#collections"><span class="count-dot"></span> 50 OPEN DOORS <span class="header-arrow">↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-map" aria-hidden="true"></div>
+        <div class="hero-grain" aria-hidden="true"></div>
+        <div class="hero-content">
+          <div class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span> A FIELD GUIDE TO THE INTERNET</div>
+          <h1 id="hero-title">The world is<br />closer than <em>you think.</em></h1>
+          <p class="hero-copy">Live weather over the Pacific. A library that never closes. A window in a city you’ve never seen. Start anywhere.</p>
+          <form class="hero-search" role="search" id="search-form">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.6"></circle><path d="m16 16 4.4 4.4"></path></svg>
+            <label class="sr-only" for="resource-search">Search 50 destinations</label>
+            <input id="resource-search" type="search" placeholder="Search places, ideas, or just wander…" autocomplete="off" />
+            <kbd>/</kbd>
+            <button type="submit" aria-label="Search">↵</button>
+          </form>
+          <div class="hero-footnote"><span>50 carefully chosen places</span><span class="footnote-separator">/</span><span>7 ways to explore</span><a href="#collections">Begin exploring <b>↓</b></a></div>
+        </div>
+        <div class="hero-coordinates" aria-hidden="true">35° 41′ N&nbsp;&nbsp; 139° 41′ E <span>EARTH, SOMEWHERE</span></div>
+      </section>
+
+      <section class="collection-section" id="collections" aria-labelledby="collection-heading">
+        <div class="section-intro">
+          <div>
+            <div class="eyebrow section-eyebrow"><span class="eyebrow-line"></span> YOUR NEXT RABBIT HOLE</div>
+            <h2 id="collection-heading">Pick a direction<span class="period">.</span></h2>
+          </div>
+          <p class="section-note">A living index of fascinating corners of the web.<br />No itinerary required.</p>
+        </div>
+
+        <div class="discovery-row">
+          <div class="filter-wrap" aria-label="Filter collections">
+            <div id="category-filters" class="category-filters" role="group" aria-label="Filter by collection"></div>
+          </div>
+          <button class="surprise-button" id="surprise-button" type="button"><span class="surprise-spark" aria-hidden="true">✳</span> Surprise me <span aria-hidden="true">↗</span></button>
+        </div>
+
+        <div class="results-meta" aria-live="polite"><span id="results-count">50 destinations</span><span class="results-rule"></span><span id="search-status">THE WORLD, AT YOUR FINGERTIPS</span></div>
+        <div id="resource-collections" class="resource-collections"></div>
+        <div id="empty-state" class="empty-state" hidden>
+          <span class="empty-orbit" aria-hidden="true">?</span>
+          <h3>No paths found.</h3>
+          <p>Try another word or clear the filters to start wandering again.</p>
+          <button id="clear-filters" type="button">Clear search and filters <span aria-hidden="true">↗</span></button>
+        </div>
+      </section>
+
+      <section class="closing-note" id="about">
+        <div class="closing-star" aria-hidden="true">✳</div>
+        <div><div class="eyebrow">A SMALL NOTE FROM THE EDITORS</div><p>The internet is enormous. This is a tiny, hand-picked window into it. Every link opens a world made by someone else—go see what you find.</p></div>
+        <a href="#top" class="back-to-top">BACK TO THE TOP <span aria-hidden="true">↑</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="footer-brand" href="#top">worldwide<span>®</span></a><span>Made for the pleasantly curious.</span><span class="footer-coordinate">A LITTLE CLOSER TO EVERYWHERE&nbsp; ↗</span></footer>
+  </body>
+</html>
